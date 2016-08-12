@@ -52,7 +52,7 @@ public class Utility {
         return formatTemperature(context, temperature, isMetric(context));
     }
 
-    static String formatDate(long dateInMilliseconds) {
+    public static String formatDate(long dateInMilliseconds) {
         Date date = new Date(dateInMilliseconds);
         return DateFormat.getDateInstance().format(date);
     }
